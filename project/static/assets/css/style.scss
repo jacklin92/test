@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+.title {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(115deg, rgb(80, 113, 109) 50%, transparent 50%)
+      center center / 100% 100%,
+    url("../images/title_img.jpg") right center / auto 100%;
+
+  .title_txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 80px;
+      border-bottom: 1px solid #fcfcfc;
+      font-weight: 900;
+      margin-left: 4rem;
+      color: aliceblue;
+      small {
+        display: block;
+        font-size: 54px;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      margin-left: 4rem;
+      font-size: 25px;
+      font-weight: 300;
+      color: aliceblue;
+    }
+    .menuBt {
+      padding: 1rem 1rem;
+      margin: 2rem 0rem;
+      margin-left: 4rem;
+      border-radius: 20px;
+      background-color: #f1f1f1;
+      color: #130707;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(255, 248, 150);
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////Menu1-Css////////////////////////////////////////////////////////////////////////////////
+.menu-ico {
+  width: 2rem;
+  height: 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-image: url(../images/home-bg.png);
+  background-size: cover;
+  background-position: center;
+
+  .main {
+    flex: 1;
+    width: 100%;
+    height: 30vh;
+  }
+  #homeOuter {
+    text-align: center;
+  }
+  .search {
+    margin-top: 10px;
+    .searchTitle {
+      font-size: 55px;
+      line-height: 55px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      margin: 0px;
+    }
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    .searchInput {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .input-group {
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 50px;
+    input {
+      border: none;
+      padding: 0;
+      height: 100%;
+    }
+    input::placeholder {
+      font-size: 1.2rem;
+    }
+    input:focus {
+      outline: none;
+    }
+    i {
+      color: #0b5d90;
+      margin-right: 10px;
+    }
+    .btn {
+      display: flex;
+      width: 5rem;
+      margin: 2px 2px;
+      color: #ffffff;
+      background-color: #0b5d90;
+      justify-content: center;
+      align-items: center;
+      i {
+        color: #ffffff;
+        display: block;
+      }
+    }
+  }
+}
+.search-local-group {
+  display: flex;
+  align-items: center;
+}
+.autocomplete-input {
+  flex: 1;
+  margin: 0px 0px 2px 2px;
+  padding: 0px 4px;
+}
+.divider {
+  border-right: 1px solid #979797;
+  height: 100%;
+  width: 0px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+////////////////////////////////
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2rem;
+  width: 100vw;
+  // border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.restaurant-card {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  // border: 1px solid #ccc;
+  // border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 200px; /* 設定每個卡片的寬度 */
+  height: 200px; /* 設定每個卡片的高度 */
+  overflow: hidden; /* 如果圖片比框大，隱藏超出部分 */
+  margin: 10px; /* 設定卡片之間的間距 */
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.restaurant-card .mask {
+  position: relative;
+}
+
+.restaurant-card .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.restaurant-card .info .name,
+.restaurant-card .info .count,
+.restaurant-card .info span {
+  border-radius: 4px;
+}
+
+.restaurant-card .info .name {
+  // font-weight: bold;
+  font-size: 4rem;
+}
+
+.restaurant-card .info .count {
+  font-size: 1.6rem;
+}
+
+.restaurant-card .info span {
+  font-size: 1.6rem;
+}
+
+// //footer
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #55acee;
+}
+.google-bg {
+  background: #dd4b39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.restaurant-card .resImg img {
+  width: 100%; /* 設定圖片寬度為卡片寬度 */
+  height: 100%; /* 設定圖片高度為卡片高度 */
+  object-fit: cover; /* 讓圖片填滿框並保持比例 */
+}

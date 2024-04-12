@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+div {
+  display: block;
+}
+.title {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(115deg, rgb(80, 113, 109) 50%, transparent 50%)
+      center center / 100% 100%,
+    url("../images/title_img.jpg") right center / auto 100%;
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+
+    .title_txt {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 80px;
+        border-bottom: 1px solid #fcfcfc;
+        font-weight: 900;
+        margin-left: 4rem;
+        color: aliceblue;
+        small {
+          display: block;
+          font-size: 54px;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        margin-left: 4rem;
+        font-size: 25px;
+        font-weight: 300;
+        color: aliceblue;
+      }
+      .menuBt {
+        padding: 1rem 1rem;
+        margin: 2rem 0rem;
+        margin-left: 4rem;
+        border-radius: 20px;
+        background-color: #f1f1f1;
+        color: #130707;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(255, 248, 150);
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////Menu1-Css////////////////////////////////////////////////////////////////////////////////
+.menu-ico {
+  width: 2rem;
+  height: 2rem;
+}
