@@ -19,7 +19,8 @@
   <body>
     <div class="form-wrapper">
         <h1>Create Account</h1>
-        <form>
+        <form method="POST" action="{% url "create" %}">
+          {% csrf_token %}
           <div class="form-item">
             <label for="clientname"></label>
             <input type="clientname" name="clientname" required="required" placeholder="Clientname"></input>
@@ -33,7 +34,7 @@
             <input type="password" name="password" required="required" placeholder="Password"></input>
           </div>
           <div class="button-panel">
-            <input type="submit" class="button" title="Sign In" value="Create"></input>
+            <a href="create/"><input type="submit" class="button" title="Sign In" value="Create"></input></a>
           </div>
         </form>
         <div class="form-footer">
