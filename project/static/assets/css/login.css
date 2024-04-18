@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 /* fontawesome */
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-[class*=fontawesome-]:before {
+[class*="fontawesome-"]:before {
   font-family: "FontAwesome", sans-serif;
 }
 
@@ -83,6 +83,30 @@ form {
   background: #ee3e52;
 }
 
+.button-panel a input .button {
+  background: #f16272;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.a.button:hover {
+  background: #5e3eee;
+}
+
+.text-center {
+  align-items: center;
+  justify-items: center;
+}
+
 .form-footer {
   font-size: 1em;
   padding: 2em 0;
@@ -97,4 +121,4 @@ form {
 
 .form-footer a:hover {
   border-bottom: 1px dotted #8c8c8c;
-}/*# sourceMappingURL=login.css.map */
+} /*# sourceMappingURL=login.css.map */

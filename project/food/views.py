@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Account
-from django.contrib.auth import logout
+from django.contrib import messages
 
 loginv = True
 
@@ -76,7 +76,13 @@ def loginsys(request):
 
 def logoutsys(request):
     request.session.flush()
-    return redirect("/login/")
+    return redirect("/menu1/")
+
+def posting(request):
+    if not request.session.get('client_name'):
+        messages.error(request, "您必須先登入!")
+        return redirect("/login/")
+    return  redirect("/page2/")
 
 
 

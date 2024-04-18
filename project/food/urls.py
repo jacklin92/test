@@ -10,5 +10,5 @@ urlpatterns = [
     path("create/", views.create, name="create"),
     path("loginsys/", views.loginsys, name="loginsys"),
     path("logoutsys/", views.logoutsys, name="logoutsys"),
-#     path("posting/",views.posting,name="posting"),
+    path("posting/",views.posting,name="posting"),
  ]
